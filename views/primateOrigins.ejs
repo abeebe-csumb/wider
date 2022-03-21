@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs') %>
+<div id="background"></div>
+<div id="container">
+
+  <div id="main" class="container text-center">
+    <h1 class="text-light mb-3">Origins of Primates</h1>
+    <p class="text-light">The dawn of the apes began many millions of years ago. 65 million years to be specific. The species that we know as apes today differ from humans in many ways, physical appearance being a major one.</p>
+    <img class="mb-5" src="/img/family_tree.jpeg" />
+    <p class="text-white">Primates, in general, have long arms. The length of their arms extends beyond the length of their legs. A trait evolved to enable them to swing great lengths from limb to limb. Many species of primate are arboreal.</p>
+    <p class="text-white">Species evolve through a variety of means. They can be driven by a need to survive their surroundings. They can develop new means of hunting/gathering food. Their environment could change, causing a species to migrate, seperate, and diversify. Darwin's theory of evolution covers the means by which species evolve in much greater detail.</p>
+    <img src="/img/darwins_theory.jpeg" class="mb-5" />
+    <p class="text-white">In addition to their long arms, primates differ from humans in a few other key ways: </p>
+    <ul class="text-light">
+        <li>Long, sharp canine teeth allow primates to eat raw meat</li>
+        <li>Smaller skulls and smaller brains</li>
+        <li>Wider birth canal and quadrapedal</li>
+    </ul>
+    <img src="/img/chimp_vs.jpg" />
+    <p class="mb-5 text-light">(Pictured above: human skeleton, early hominin, primate)</p>
+
+    <h3 class="mb-5 text-light">However, we are more alike than we are different.</h3>
+
+    <p class="text-white">Scientists do not know for sure why our primate ancestors evolved to a life suited high above the ground. There are several theories as to why primates decided to leave their safe arboreal habitat, where they then, at some point, began to walk upright...</p>
+    <p class="mb-5 text-light">It was at this point in history, that our early ancestors began to diverge from our shared ape ancestor.</p>
+    <a href="/earlyHominin" class="btn btn-lg btn-primary">Early Hominin</a>
+  </div>
+</div>
+
+<style>
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#background {
+    background-image: url("/img/chimpanzee.jpg");
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 10%;
+    right: auto;
+    padding-bottom: 15px;
+}
+ul {
+    list-style-position: inside;
+}
+</style>
+<%- include('partials/footer.ejs') %>

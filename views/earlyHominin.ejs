@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+<div id="background"></div>
+<div id="container">
+
+  <div id="main" class="container text-center">
+      <h1 class="text-light mb-3">Always On the Move</h1>
+      <p class="text-light">Early "humans", known as hominin, made one of the boldest evolutionary movements known when they came down from the trees and became bipedal.</p>
+      <p class="text-light">Many theories seek to answer the question of "why" our ape ancestors started to walk upright. Could it have had something to do with a changing climate? Archeologists can see through the layers of earth's sediment, the changes to the landscape over time. The tall trees that use to house our early ancestors, changed over time and turned into grassland. </p>
+      <img class="img-fluid mb-3" src="/img/lucy-evolution.jpeg" />
+      <p class="text-light">This popular theory suggests that early humans gradually began to live on the ground. Once on the ground, our ancestors gained an advantage by walking upright, which reduced the calories and thus food needed for survival. An advantage, which allowed them to outpace other primates.</p>
+      <p class="text-light">From here, a ripple effect of saving energy, resulting in evolutionary advantages allowed humans to develop larger brains and make tools - a key development that drastically increased the speed of the evolutionary time scale.</p>
+      <a href="/conclusion" class="btn btn-warning btn-lg">Continuing Observations</a>
+  </div>
+</div>
+
+<style>
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#background {
+    background-image: url("/img/grassland.jpg");
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-color: rgba(0,0,0,.6);
+    padding-bottom: 15px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+img {
+    max-width: inherit;
+}
+</style>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,52 @@
+<%- include('partials/header.ejs') %>
+<div id="background"></div>
+<div id="cover"></div>
+
+<div id="container">
+    <img id="leafFrame2" src="/img/manyleaves.png" />
+    <img id="welcomeMonkey" src="/img/monkey.png" />
+
+    <div id="main" class="container text-center">
+        <h1 class="mb-3 text-light">Looking Ahead</h1>
+        <p class="mb-3 text-light">To study Physical Anthropology is to wonder about who we are and where we came from. This class gave me the ability to ask these questions and more. We can use the technology availible to us, like live cams, or take the traditional path of <a href="https://www.youtube.com/watch?v=DlmjF39vziY">observing primates in the wild.</a></p>
+        <img class="img-fluid mb-3"  src="/img/apecam.png" />
+        <p class="text-light">(San Diego Zoo's Live Cam)</p>
+        <img class="img-fluid mb-3"  src="/img/apecam_source.png" />
+        <p class="text-light">During this observation, I observed behavior typical of primates, such as swinging through trees and grooming each other. However, I also noted behvaior that was shared by both humans and primates: socialization, using tools, mothers caring for their young, and so on.</p>
+        <p class="text-light">It seems that humans and primates, while two completey seperate species, have been inextricably linked through our shared common ancestor and are the key to unlocking the mystery of human evolution.</p>
+        <a href="/" class="btn btn-lg btn-secondary">Return Home</a>
+    </div>
+</div>
+
+<style>
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: black;
+}
+#background {
+    background-image: url("/img/backgroundleaves2.jpg");
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    background-color: transparent;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 15px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+img {
+    max-width: inherit;
+}
+</style>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,41 @@
+<%- include('partials/header.ejs') %>
+    <div id="background"></div>
+    <div id="cover"></div>
+    <div id="container">
+
+      <audio id="player">
+        <source src="/audio/rainforest.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="leafEffect">
+        <source src="/audio/rustl.m4a">
+      </audio>
+
+      <img id="leafFrame1" src="/img/manyleaves.png" />
+      <img id="singleleaf" src="/img/singleleaf.png" />
+
+      <div id="main" class="container text-center">
+        <div class="row m-3 pb-3">
+          <h2 class="pt-3 text-center">A Window Through Time</h2>
+          <h4 class="mb-3 text-center">What Can Observing Primates Tell Us About Our Past?</h4>
+          <p>When we study our past, we look to the world around us to give us hints about how humans came to be.</p>
+          <p>Chimpanzees are the closest genetic relatives to humans. Our species share 98% of our genetic code with them. This has naturally lead scientists to study chimpanzee behavior to learn about how the human species evolved.</p>
+          <p>&#8230;</p>
+          <h5>Why do humans walk around on two legs (bipedalism) and not on all fours, like chimpanzees?</h5>
+          <h5>When did our ancestors descend from the trees and what lead them to make this change?</h5>
+          <h5>What are the main distinctive evolutionary traits that classify us as homo sapian?</h5>
+          <p>&#8230;</p>
+          <p>These are just a few of the questions related to the topic of Physical Anthropology that we addressed in this course. Let's take a deeper dive into each of these topics!</p>
+        </div>
+        <a href="/primateOrigins" class="btn btn-lg btn-success mb-3">Primate Origins</a>
+      </div>
+    </div>
+    <div id="welcome">
+      <div id="welcomeMessage" class="container">
+        <img>
+        <h3 class="text-light">Wider Engagements Project</h3>
+        <p class="text-light">This website was created by Amber Beebe for Intro to Physical Anthropology, Spring 22 semester.</p>
+        <button id="audioControl" class="btn btn-lg btn-light">Enter Site</button>
+      </div>
+    </div>
+    <%- include('partials/footer.ejs') %>
